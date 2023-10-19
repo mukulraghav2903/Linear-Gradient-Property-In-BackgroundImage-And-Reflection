@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-colors & Image Reflection</title>
+</head>
+<style>
+    .main{
+        width: 1000px;
+        height: 200px;
+        margin: auto;
+        text-align: center;
+
+        /* multi-colors background dene ke liye hum linear-gradient property ka use karege. */
+        background-image: linear-gradient(red, yellow);
+                        /* linear-gradient(to right(bottom, left) red, yellow); or isme multi-colors bhi de sakte hai.*/
+                        /* jaise linear-gradient(red, yellow, green, blue);*/
+    }
+    .main2{
+        width: 1000px;
+        height: 200px;
+        margin: auto;
+        text-align: center;
+
+        /* Multi colors background: Using linear-gradient() property. */
+        background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    }
+    .main3{
+        width: 1000px;
+        height: 200px;
+        margin: auto;
+       border: 2px red solid;
+    }
+    .image{
+        /* Image Reflection in box-reflect property in webkit property. */
+        -webkit-box-reflect: right 20px;
+        /* Value of box-reflect property are: below, above, left or right. Or ye px(pixels) se hum image ke bichme gap de sakte hain. */
+    }
+</style>
+<body>
+    <div class="main">
+        <h1>Hello, My dear Friends! </h1>
+    </div>
+    <div class="main2">
+        <h1>Rainbow Colors using linear-gradient property in background-image</h1>
+    </div> <br> <br>
+
+    <!-- Image Reflection in box-reflect property in webkit -->
+    <div class="main3">
+        <img src="heartgif.webp" alt="" width="490px" height="200px" class="image">
+    </div>
+</body>
+</html>
